@@ -1,5 +1,5 @@
 # Advanced Walkthrough of Cats vs. Dogs Classification Using TensorFlow
-[direct solution cellwise](https://example.com)
+[direct solution cellwise](DirectSolution.md)
 
 
 ## Table of Contents
