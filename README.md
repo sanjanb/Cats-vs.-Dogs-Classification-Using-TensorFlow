@@ -1,4 +1,6 @@
 # Advanced Walkthrough of Cats vs. Dogs Classification Using TensorFlow
+[direct solution cellwise](https://example.com)
+
 
 ## Table of Contents
 1. Project Setup and Imports
