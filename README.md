@@ -32,8 +32,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 ```
 
-**What are we doing?**
-We import TensorFlow and its relevant modules for creating and training a Convolutional Neural Network (CNN). The `try-except` block is for compatibility with Google Colab, ensuring TensorFlow 2.x is used.
+**What am i doing?**
+I am importing TensorFlow and its relevant modules for creating and training a Convolutional Neural Network (CNN). The `try-except` block is for compatibility with Google Colab, ensuring TensorFlow 2.x is used.
 
 **Why import specific modules?**
 - `Sequential` and `Layers` (e.g., `Dense`, `Conv2D`, etc.) are essential for defining our CNN architecture.
@@ -55,10 +55,10 @@ validation_dir = os.path.join(PATH, 'validation')
 test_dir = os.path.join(PATH, 'test')
 ```
 
-**What are we doing?**
-We download the dataset and unzip it. The data is organized into three folders: `train`, `validation`, and `test`, containing images of cats and dogs.
+**What am i doing?**
+I am  downloading the dataset and unzip it. The data is organized into three folders: `train`, `validation`, and `test`, containing images of cats and dogs.
 
-**Why do we structure data this way?**
+**Why am i structuring the data this way?**
 The split between `train`, `validation`, and `test` helps with model training, tuning, and evaluation to prevent overfitting and improve generalization.
 
 ---
@@ -71,8 +71,8 @@ total_val = sum([len(files) for r, d, files in os.walk(validation_dir)])
 total_test = len(os.listdir(test_dir))
 ```
 
-**What are we doing?**
-We count the total images in each directory.
+**What am i doing?**
+i am counting the total images in each directory.
 
 **Why count files?**
 Knowing the dataset size helps us set parameters for batch processing, monitor resource usage, and ensure a balanced dataset.
@@ -88,7 +88,7 @@ IMG_HEIGHT = 150
 IMG_WIDTH = 150
 ```
 
-**What are we setting here?**
+**What am i setting here?**
 1. **Batch size:** Determines how many images the model will process before updating weights.
 2. **Epochs:** Specifies the number of complete passes through the training data.
 3. **IMG_HEIGHT/IMG_WIDTH:** Defines the dimensions to resize images for model input.
@@ -110,7 +110,7 @@ test_data_gen = None
 ```
 
 **What’s happening here?**
-We initialize data generators for loading and augmenting training, validation, and test datasets.
+I am initializing data generators for loading and augmenting training, validation, and test datasets.
 
 **Why initialize as `None`?**
 This initialization ensures the variables are defined, preparing us to assign actual data generators to them in the next steps.
@@ -267,7 +267,7 @@ plt.show()
 ```
 
 **What’s happening here?**
-We extract accuracy and loss metrics, plotting them to visualize model performance over epochs.
+I am extracting accuracy and loss metrics, plotting them to visualize model performance over epochs.
 
 **Why plot these metrics?**
 Visualization shows trends in learning, allowing us to spot overfitting if the validation accuracy diverges from training accuracy.
@@ -296,7 +296,7 @@ print("Performance on Test data: %.2f" % (correct/len(test_data_gen[0][1]) * 100
 ```
 
 **What’s happening here?**
-We compare model predictions to test labels, counting correct classifications.
+i am comparing model predictions to test labels, counting correct classifications.
 
 **Why manually calculate accuracy?**
 Manual calculation verifies the model’s test performance, critical for assessing real-world applicability.
